@@ -1,7 +1,4 @@
 #aplicacion para descargar imagenes
-#https://boards.4chan.org/aco/thread/5188448
-#except ConnectionError:
-#self.LabelEstado['text'] = 'problema de red'
 
 
 import tkinter as tk
@@ -104,8 +101,6 @@ class prog():
     def extractor(self, source_code):#extraer los links de las fotos
         source_code = re.findall(r'(http[^\s"]+(.jpg|.jpeg|.png|.tiff)\b)', source_code)
         self.LabelEstado['text'] = 'imagenes encontradas'
-        #https://vercomicsporno.com/aquadrop-odekake-sex-soushuuhen
-            
         return source_code
 
     def descargador(self,source_code):
